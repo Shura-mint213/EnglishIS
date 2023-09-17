@@ -1,0 +1,11 @@
+D:\programm\EnglishIS\Static\bin\Release\net7.0\Static.deps.json
+D:\programm\EnglishIS\Static\bin\Release\net7.0\Static.dll
+D:\programm\EnglishIS\Static\bin\Release\net7.0\Static.pdb
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.GeneratedMSBuildEditorConfig.editorconfig
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.AssemblyInfoInputs.cache
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.AssemblyInfo.cs
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.csproj.CoreCompileInputs.cache
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.dll
+D:\programm\EnglishIS\Static\obj\Release\net7.0\refint\Static.dll
+D:\programm\EnglishIS\Static\obj\Release\net7.0\Static.pdb
+D:\programm\EnglishIS\Static\obj\Release\net7.0\ref\Static.dll
