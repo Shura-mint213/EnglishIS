@@ -21,8 +21,6 @@ namespace Models.Database
         public string? LastName { get; set; }
         [Column("age")]
         public int? Age { get; set; }
-        [Column("login")]
-        public string Login { get; set; }
         [Column("password")]
         public string Password { get; set; }
         [Column("email")]
