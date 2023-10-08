@@ -54,18 +54,18 @@ CREATE TABLE Users
     User_Id    SERIAL,
     First_Name CHARACTER VARYING(64)  NOT NULL,
     Last_Name  CHARACTER VARYING(64)  NULL,
-    Age        SMALLINT  NULL,	
-	Login      CHARACTER VARYING(15)  UNIQUE NOT NULL,
+    Birthday   DATE  NULL,	
 	Password   CHARACTER VARYING (30) NOT NULL,	
     Email      CHARACTER VARYING(30)  UNIQUE NULL,
     Phone      CHARACTER VARYING(30)  UNIQUE NOT NULL,
-	Role_Id    INTEGER   NOT NULL, 
-	Level_Id  INTEGER    NOT NULL,
-	CHECK((Login != '')  AND (Phone != '')),
+	Role_Id    SMALLINT   NOT NULL, 
+	Level_Id   SMALLINT   NOT NULL,
+	CHECK(Phone != ''),
 	CONSTRAINT User_Id   PRIMARY KEY (User_Id),
 	FOREIGN KEY (Role_Id) REFERENCES Roles (Role_Id),
 	FOREIGN KEY (Level_Id) REFERENCES Levels (Level_Id)
 );
+
 
 CREATE TABLE Subscription (
 	Subscription_Id BIGINT,
@@ -76,5 +76,26 @@ CREATE TABLE Subscription (
 	CONSTRAINT Subscription_Id PRIMARY KEY (Subscription_Id),
 	FOREIGN KEY (User_Id) REFERENCES Users (User_Id)
 );
+
+INSERT INTO roles(name)
+VALUES ('Пользователь') 
+INSERT INTO roles(name)
+VALUES ('Админ') 
+
+INSERT INTO types(name)
+VALUES ('Уровень английского языка') 
+
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'A1', 'Начальный');
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'A2', 'Ниже среднего');
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'B1', 'Средний');
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'B2', 'Выше среднего');
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'C1', 'Продвинутый');
+INSERT INTO levels(type_id, name, description)
+VALUES (1,'C2', 'Профессиональный уровень владения');
 
 

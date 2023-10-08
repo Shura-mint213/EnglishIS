@@ -1,12 +1,17 @@
+using Data;
 using Data.Providers;
+using EnglishIS.Helpers;
 using EnglishIS.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.EntityFrameworkCore;
 using Models.Providers;
 using Static.Static;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddTransient<Database>();
 
 // Add services to the container.
 builder.Services.AddDbProviders();
@@ -14,13 +19,16 @@ builder.Services.AddDbProviders();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options => //CookieAuthenticationOptions
                 {
-                    options.LoginPath = new PathString("/   ");
+                    options.LoginPath = new PathString("/User/Login");
                 });
+
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Database>();
 
 var app = builder.Build();
 
-SettingsApp.ConnectionString = app.Configuration["ConnectionStrings"];
+LoadingIsConfigured.Download(app);
 
 if (!app.Environment.IsDevelopment())
 {

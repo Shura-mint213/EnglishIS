@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Eydh4eUN5jC9nvZL2kHScH2Fhdau0GPNl1/oiJVAFA=",
+  "Hash": "in8owTcRk1uzwo9Lu0m+1lX+DLSsOSyOJ+FTDK9nyU4=",
   "Source": "EnglishIS",
   "BasePath": "_content/EnglishIS",
   "Mode": "Default",
@@ -933,6 +933,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\programm\\EnglishIS\\EnglishIS\\wwwroot\\lib\\jquery-maskedinput\\dist\\jquery.maskedinput.min.js",
+      "SourceId": "EnglishIS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programm\\EnglishIS\\EnglishIS\\wwwroot\\",
+      "BasePath": "_content/EnglishIS",
+      "RelativePath": "lib/jquery-maskedinput/dist/jquery.maskedinput.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-maskedinput\\dist\\jquery.maskedinput.min.js"
+    },
+    {
+      "Identity": "D:\\programm\\EnglishIS\\EnglishIS\\wwwroot\\lib\\jquery-maskedinput\\LICENSE.md",
+      "SourceId": "EnglishIS",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programm\\EnglishIS\\EnglishIS\\wwwroot\\",
+      "BasePath": "_content/EnglishIS",
+      "RelativePath": "lib/jquery-maskedinput/LICENSE.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\jquery-maskedinput\\LICENSE.md"
     },
     {
       "Identity": "D:\\programm\\EnglishIS\\EnglishIS\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",

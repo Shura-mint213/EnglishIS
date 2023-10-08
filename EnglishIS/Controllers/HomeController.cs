@@ -1,5 +1,6 @@
 ﻿using Data.Providers;
 using EnglishIS.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Models.Database;
 using Models.Providers;
@@ -18,14 +19,16 @@ namespace EnglishIS.Controllers
             _usersProvider = usersProvider;
         }
 
+        [Authorize]
         public IActionResult Index()
         {
             //var users = usersProvider.Get();
             var users = _usersProvider.Get();
             //Users users1 = new() { Age = 23, Name = "Amin" };
             //usersProvider.Create(users1);
-
+            
             //users = usersProvider.Get();
+            var name = User.Identity.Name;
             return View();
         }
 

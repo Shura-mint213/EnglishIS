@@ -1,4 +1,5 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
+﻿$(function () {
+    //Получаем элементы, к которому необходимо добавить маску
+    $(".phone").mask("+7 (999) 999-99 99");
+    //$(".date").mask("99.99.9999");
+});

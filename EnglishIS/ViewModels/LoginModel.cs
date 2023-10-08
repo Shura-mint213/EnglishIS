@@ -6,7 +6,7 @@ namespace EnglishIS.ViewModels
     {
 
         [Required(ErrorMessage = "Не указан логин")]
-        public string Login { get; set; }
+        public string Phone { get; set; }
 
         [Required(ErrorMessage = "Не указан пароль")]
         [DataType(DataType.Password)]
